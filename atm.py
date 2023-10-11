@@ -95,8 +95,8 @@ def dozens2():
             print('тридцать ')
         case '2':
             print('двадцать ')
-        case _:
-            match money2[1]:
+        case '1':
+            match money2[-1]:
                 case '9':
                     print('девятнадцать рублей')
                 case '8':
