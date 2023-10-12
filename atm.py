@@ -1,78 +1,77 @@
 print('Введите сумму в рублях (от 1 до 100000): ')
 money = int(input())
-money2 = str(money)
-money2 = list(money2)
+money2 = list(str(money))
 length_money = len(money2)
 
 
 def dozens():
     match money2[0]:
         case '9':
-            print('Девяносто ')
+            print('Девяносто ', end='')
         case '8':
-            print('Восемьдесят ')
+            print('Восемьдесят ', end='')
         case '7':
-            print('Семьдесят ')
+            print('Семьдесят ', end='')
         case '6':
-            print('Шестьдесят ')
+            print('Шестьдесят ', end='')
         case '5':
-            print('Пятьдесят ')
+            print('Пятьдесят ', end='')
         case '4':
-            print('Сорок ')
+            print('Сорок ', end='')
         case '3':
-            print('Тридцать ')
+            print('Тридцать ', end='')
         case '2':
-            print('Двадцать ')
+            print('Двадцать ', end='')
         case _:
             match money2[1]:
                 case '9':
                     if length_money == 5:
-                        print('Девятнадцать тысяч')
+                        print('Девятнадцать тысяч', end='')
                     else:
-                        print('Девятнадцать рублей')
+                        print('Девятнадцать рублей', end='')
                 case '8':
                     if length_money == 5:
-                        print('Восемнадцать тысяч')
+                        print('Восемнадцать тысяч', end='')
                     else:
-                        print('Восемнадцать рублей')
+                        print('Восемнадцать рублей', end='')
                 case '7':
                     if length_money == 5:
-                        print('Семнадцать тысяч')
+                        print('Семнадцать тысяч', end='')
                     else:
-                        print('Семнадцать рублей')
+                        print('Семнадцать рублей', end='')
                 case '6':
                     if length_money == 5:
-                        print('Шестнадцать тысяч')
+                        print('Шестнадцать тысяч', end='')
                     else:
                         print('Шестнадцать рублей')
                 case '5':
                     if length_money == 5:
-                        print('Пятнадцать тысяч')
+                        print('Пятнадцать тысяч', end='')
                     else:
                         print('Пятнадцать рублей')
                 case '4':
                     if length_money == 5:
-                        print('Четырнадцать тысяч')
+                        print('Четырнадцать тысяч', end='')
                     else:
                         print('Четырнадцать рублей')
                 case '3':
                     if length_money == 5:
-                        print('Тринадцать тысяч')
+                        print('Тринадцать тысяч', end='')
                     else:
                         print('Тринадцать рублей')
                 case '2':
                     if length_money == 5:
-                        print('Двенадцать тысяч')
+                        print('Двенадцать тысяч', end='')
                     else:
                         print('Двенадцать рублей')
                 case '1':
                     if length_money == 5:
-                        print('Одиннадцать тысяч')
+                        print('Одиннадцать тысяч', end='')
                     else:
                         print('Одиннадцать рублей')
                 case _:
                     if length_money == 5:
-                        print('Десять тысяч')
+                        print('Десять тысяч', end='')
                     else:
                         print('Десять рублей')
 
@@ -80,21 +79,21 @@ def dozens():
 def dozens2():
     match money2[-2]:
         case '9':
-            print('девяносто ')
+            print('девяносто ', end='')
         case '8':
-            print('восемьдесят ')
+            print('восемьдесят ', end='')
         case '7':
-            print('семьдесят ')
+            print('семьдесят ', end='')
         case '6':
-            print('шестьдесят ')
+            print('шестьдесят ', end='')
         case '5':
-            print('пятьдесят ')
+            print('пятьдесят ', end='')
         case '4':
-            print('сорок ')
+            print('сорок ', end='')
         case '3':
-            print('тридцать ')
+            print('тридцать ', end='')
         case '2':
-            print('двадцать ')
+            print('двадцать ', end='')
         case '1':
             match money2[-1]:
                 case '9':
@@ -123,47 +122,47 @@ def units():
     match money2[0]:
         case '9':
             if length_money == 4:
-                print('Девять тысяч ')
+                print('Девять тысяч ', end='')
             else:
-                print('Девять рублей')
+                print('Девять рублей', end='')
         case '8':
             if length_money == 4:
-                print('Восемь тысяч ')
+                print('Восемь тысяч ', end='')
             else:
-                print('Восемь рублей')
+                print('Восемь рублей', end='')
         case '7':
             if length_money == 4:
-                print('Семь тысяч ')
+                print('Семь тысяч ', end='')
             else:
                 print('Семь рублей')
         case '6':
             if length_money == 4:
-                print('Шесть тысяч ')
+                print('Шесть тысяч ', end='')
             else:
                 print('Шесть рублей')
         case '5':
             if length_money == 4:
-                print('Пять тысяч ')
+                print('Пять тысяч ', end='')
             else:
                 print('Пять рублей')
         case '4':
             if length_money == 4:
-                print('Четыре тысячи ')
+                print('Четыре тысячи ', end='')
             else:
                 print('Четыре рубля')
         case '3':
             if length_money == 4:
-                print('Три тысячи ')
+                print('Три тысячи ', end='')
             else:
                 print('Три рубля')
         case '2':
             if length_money == 4:
-                print('Две тысячи ')
+                print('Две тысячи ', end='')
             else:
                 print('Два рубля')
         case _:
             if length_money == 4:
-                print('Одна тысяча ')
+                print('Одна тысяча ', end='')
             else:
                 print('Один рубль')
 
@@ -202,76 +201,76 @@ def units3():
 def hundreds():
     match money2[0]:
         case '9':
-            print('Девятьсот ')
+            print('Девятьсот ', end='')
         case '8':
-            print('Восемьсот ')
+            print('Восемьсот ', end='')
         case '7':
-            print('Семьсот ')
+            print('Семьсот ', end='')
         case '6':
-            print('Шестьсот ')
+            print('Шестьсот ', end='')
         case '5':
-            print('Пятьсот ')
+            print('Пятьсот ', end='')
         case '4':
-            print('Четыреста ')
+            print('Четыреста ', end='')
         case '3':
-            print('Триста ')
+            print('Триста ', end='')
         case '2':
-            print('Двести ')
+            print('Двести ', end='')
         case _:
-            print('Сто ')
+            print('Сто ', end='')
 
 
 def hundreds2():
     match money2[-3]:
         case '9':
-            print('девятьсот ')
+            print('девятьсот ', end='')
         case '8':
-            print('восемьсот ')
+            print('восемьсот ', end='')
         case '7':
-            print('семьсот ')
+            print('семьсот ', end='')
         case '6':
-            print('шестьсот ')
+            print('шестьсот ', end='')
         case '5':
-            print('пятьсот ')
+            print('пятьсот ', end='')
         case '4':
-            print('четыреста ')
+            print('четыреста ', end='')
         case '3':
-            print('триста ')
+            print('триста ', end='')
         case '2':
-            print('двести ')
+            print('двести ', end='')
         case _:
-            print('сто ')
+            print('сто ', end='')
 
 
 def units2():
     match money2[1]:
         case '9':
             if money2[0] != '1':
-                print('девять тысяч ')
+                print('девять тысяч ', end='')
         case '8':
             if money2[0] != '1':
-                print('восемь тысяч ')
+                print('восемь тысяч ', end='')
         case '7':
             if money2[0] != '1':
-                print('семь тысяч ')
+                print('семь тысяч ', end='')
         case '6':
             if money2[0] != '1':
-                print('шесть тысяч ')
+                print('шесть тысяч ', end='')
         case '5':
             if money2[0] != '1':
-                print('пять тысяч ')
+                print('пять тысяч ', end='')
         case '4':
             if money2[0] != '1':
-                print('четыре тысячи ')
+                print('четыре тысячи ', end='')
         case '3':
             if money2[0] != '1':
-                print('три тысячи ')
+                print('три тысячи ', end='')
         case '2':
             if money2[0] != '1':
-                print('две тысячи')
+                print('две тысячи', end='')
         case '1':
             if money2[0] != '1':
-                print('одна тысяча')
+                print('одна тысяча', end='')
         case _:
             print(' ')
 
